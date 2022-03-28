@@ -2,6 +2,9 @@
 
 namespace EpicAcre.Models
 {
+    /// <summary>
+    /// A Plant is anything that can be put into the ground and grown.
+    /// </summary>
     public class Plant
     {
         [Key]
@@ -9,6 +12,7 @@ namespace EpicAcre.Models
         [Required]
         public string Name { get; set; }
         public string Description { get; set; }
+        public virtual Category Category { get; set; }
 
     }
 }
