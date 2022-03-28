@@ -11,6 +11,10 @@ namespace EpicAcre.Data
         }
 
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Plant> Plants { get; set; }
+
+
+
 
     }
 }

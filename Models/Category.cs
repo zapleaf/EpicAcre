@@ -2,6 +2,9 @@
 
 namespace EpicAcre.Models
 {
+    /// <summary>
+    /// Category includes Cut Flower, Vegetable, Fruit, etc.
+    /// </summary>
     public class Category
     {
         [Key]
