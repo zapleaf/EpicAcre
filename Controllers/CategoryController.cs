@@ -16,7 +16,9 @@ namespace EpicAcre.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            IEnumerable<Category> categories = _db.Categories.ToList();
+
+            return View(categories);
         }
 
         public IActionResult Create()
